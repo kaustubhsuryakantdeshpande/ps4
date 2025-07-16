@@ -145,7 +145,8 @@ namespace HelloWorld
             Console.WriteLine($"\nTotal family members processed: {familyManager.GetMemberCount()}");
             Console.WriteLine("\nProgram completed successfully!");
         }
-
+// This method prompts the user for the number of family members and validates the input.
+        // It ensures that the input is a positive integer.
         static int GetNumberOfMembers()
         {
             int numberOfMembers;
@@ -166,6 +167,8 @@ namespace HelloWorld
             return numberOfMembers;
         }
 
+        // This method prompts the user for a family member's name and validates the input.
+        // It ensures that the name is not empty or whitespace.
         static string GetMemberName(int memberNumber)
         {
             string name;
@@ -173,7 +176,7 @@ namespace HelloWorld
             {
                 Console.Write($"Enter name for member {memberNumber}: ");
                 name = Console.ReadLine()?.Trim() ?? "";
-                
+
                 if (!string.IsNullOrEmpty(name))
                 {
                     break;
@@ -186,6 +189,8 @@ namespace HelloWorld
             return name;
         }
 
+//  This method prompts the user for a family member's date of birth and validates the input.
+        // It ensures the date is in the correct format and not in the future.
         static DateTime GetMemberDateOfBirth(string name)
         {
             DateTime dateOfBirth;
@@ -193,8 +198,8 @@ namespace HelloWorld
             {
                 Console.Write($"Enter date of birth for {name} (yyyy-mm-dd): ");
                 string? input = Console.ReadLine();
-                
-                if (!string.IsNullOrEmpty(input) && DateTime.TryParseExact(input, "yyyy-MM-dd", null, 
+
+                if (!string.IsNullOrEmpty(input) && DateTime.TryParseExact(input, "yyyy-MM-dd", null,
                     System.Globalization.DateTimeStyles.None, out dateOfBirth))
                 {
                     // Validate that the date is not in the future
