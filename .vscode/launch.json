@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C# Console App",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "${workspaceFolder}/HelloWorld/bin/Debug/net8.0/HelloWorld.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/HelloWorld",
+      "console": "internalConsole",
+      "stopAtEntry": false,
+      "preLaunchTask": "build"
+    }
+  ]
+}
