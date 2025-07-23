@@ -8,7 +8,7 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/home/codespace/.nuget/packages/": {}
+    "/home/vscode/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
@@ -16,11 +16,11 @@
       "projectUniqueName": "/workspaces/ps4/HelloWorld/HelloWorld.csproj",
       "projectName": "HelloWorld",
       "projectPath": "/workspaces/ps4/HelloWorld/HelloWorld.csproj",
-      "packagesPath": "/home/codespace/.nuget/packages/",
+      "packagesPath": "/home/vscode/.nuget/packages/",
       "outputPath": "/workspaces/ps4/HelloWorld/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/codespace/.nuget/NuGet/NuGet.Config"
+        "/home/vscode/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
